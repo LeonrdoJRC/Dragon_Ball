@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <title>Documento</title>
+</head>
+<body>
+    <div style="margin: ;24px;">
+    </div>
+    <h1>Confirmar pedido</h1>
+    <form id="confirmacion">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre"
+        id="nombre" placeholder="Nombre y 
+        apellido" required>
+        <label for="direccion">Direccion: </label>
+        <input type="text" name="direccion" id="direccion"
+        placeholder="Calle/Nimero/Colonia" required>
+        <label for="telefono">Telefono: </label>
+        <input type="text" name="direccion" id="telefono"
+        placeholder="899-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+         required>
+         <label for="email">E-Mail: </label>
+        <input type="mail" name="email" id="email"
+        placeholder="tuusuario@servidor.com" required>
+        <label for="paymentMethod">Metodo de Pago: </label>
+        <input name="paymentMethod" id="paymentMethod">
+        <option value="creditCar">Tarjrta de Credito</option>
+        <option value="Paypal">Paypal</option>
+    </form>
+</body>

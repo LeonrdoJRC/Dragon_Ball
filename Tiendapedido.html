@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <title>Restaurante Cetis menu</title>
+</head>
+<body>
+<div style="nargin: 24px;">
+</div>
+<style>
+body{
+    font-family:Arial, MElvetica, 
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+h1{
+    color: #5a5a5a;
+    text-aLign: center;
+}
+button{
+    background-color: #559457;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+button:hover{
+    background-color: #95d497;
+    color: black;
+}
+.seccion-header{
+    font-size: 18px;
+    color: #444;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+</style>
+<h1>Tienda en linea de Abarrotes</h1>
+
+<form id="orden">
+    <div  class="seccion">
+        <label for="abarrotes">Abarrotes:</label>
+        <select id="abarrotes">
+            <option value="arroz">Arroz</option>
+            <option value="consome">Consome</option>
+            <option value="azucar">Azucar</option>
+            <option value="cafe">Cafe</option>
+            <option value="mole">Mole</option>
+            <option value="sal">Sal</option>
+            <option value="mayonesa">Mayonesa</option>
+            <option value="catsup">Catsup</option>
+            <option value="pasta">Pasta</option>
+            <option value="huevo">Huevo</option>
+        </select>
+        <div>
+            cantidad:
+            <label><input type="radio" name="cantidaddeAbarrotes"
+            value="1">1</label>
+            <label><input type="radio" name="cantidaddeAbarrotes"
+            value="2">2</label>
+            <label><input type="radio" name="cantidaddeAbarrotes"
+            value="3">3</label>
+            <label><input type="radio" name="cantidaddeAbarrotes"
+            value="4">4</label>
+            <label><input type="radio" name="cantidaddeAbarrotes"
+            value="5">5</label>
+            <label><input type="radio" name="cantidaddeAbarrotes"
+            value="6">6</label>
+            <label><input type="radio" name="cantidaddeAbarrotes"
+            value="7">7</label>
+            <label><input type="radio" name="cantidaddeAbarrotes"
+            value="8">8</label>
+            <label><input type="radio" name="cantidaddeAbarrotes"
+            value="9">9</label>
+            <label><input type="radio" name="cantidaddeAbarrotes"
+            value="10">10</label>
+            <label><input type="radio" name="cantidaddeAbarrotes"
+            value="11">11</label>
+            <label><input type="radio" name="cantidaddeAbarrotes"
+            value="12">12</label>
+        </div>
+</div>
+
+<div class="seccion">
+    <label for="enlatados">Enlatados</label>
+    <select name="enlatados" id="enlatados">
+        <option value="frijoles">Frijoles</option>
+        <option value="atun">Atun</option>
+        <option value="chiles">Chiles</option>
+        <option value="elotes">Elotes</option>
+        <option value="sopas">Sopas</option>
+        <option value="vegetales">Vegetales</option>
+        <option value="frutas">Frutas</option>
+        <option value="aceitunas">Aceitunas</option>
+        <option value="sardinas">Sardinas</option>
+        <option value="chicharos">Chicharos</option>
+    </select>
+</div>
+<button type="button" onclick="submitForm()">Realizar Pedido</button>
+</form>
+
+<script>
+    function submitForm(){
+        const formElements = document.getElementById(`orden`)
+        const formData = new FormData(formElement);
+        const queryParans = new URLSearchParams();
+
+        for(let [key,value] of formData.entries{}){
+            queryParans.append(key,value);
+        }
+        window
+    }
+</script>
+
+</body>
+</html>

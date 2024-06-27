@@ -1,0 +1,13 @@
+fetch(menu,json)
+.then(response => response.json())
+//Que hace?.Esta linea 
+.then(data =>^{
+    const menuContainer = document.getElementByld('menu-container');
+    //
+    data.items.forEach(category => {
+        const categoryTitle = document.CreateElement('h2');
+        //Que hace?
+        categoryTitle.text = category.category;
+        menuContainer.appendChild(categoryTitle);
+    });
+})
